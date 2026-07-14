@@ -9,40 +9,65 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div id="top"></div>
-<header class="topbar">
-  <a class="topbar__brand" href="index.html"><span class="dot">●</span> Playbook Pós-Venda</a>
-  <div class="topbar__right">
-    <div class="progress-pill">
-      <span data-progress-label>0/15</span>
-      <span class="progress-pill__track"><span class="progress-pill__fill" data-progress-fill></span></span>
-    </div>
-    <button class="topbar__menu-btn" type="button" data-menu-toggle aria-label="Abrir sumário">☰</button>
-  </div>
-</header>
-<div class="layout">
+<div class="app-shell">
   <aside class="sidebar">
-      <p class="sidebar__label">Sumário</p>
-      <ul class="sidebar__list">
-        <li><a class="sidebar__link" data-num="1" href="cap-01.html"><span class="sidebar__num">01</span><span>O papel do pós-venda e por que ele gera receita</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link" data-num="2" href="cap-02.html"><span class="sidebar__num">02</span><span>Segmentação e ticket médio</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link" data-num="3" href="cap-03.html"><span class="sidebar__num">03</span><span>Portfólio de serviços e como precificar</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link is-active" data-num="4" href="cap-04.html"><span class="sidebar__num">04</span><span>Estrutura de custos e precificação dos serviços</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link" data-num="5" href="cap-05.html"><span class="sidebar__num">05</span><span>Jornada do cliente e o pitch certo em cada etapa</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link" data-num="6" href="cap-06.html"><span class="sidebar__num">06</span><span>Mensagens automáticas (disparo via WhatsApp)</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link" data-num="7" href="cap-07.html"><span class="sidebar__num">07</span><span>Gestão de feedback e melhoria contínua (NPS)</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link" data-num="8" href="cap-08.html"><span class="sidebar__num">08</span><span>Regra de indicação</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link" data-num="9" href="cap-09.html"><span class="sidebar__num">09</span><span>Estratégia de abordagem</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link" data-num="10" href="cap-10.html"><span class="sidebar__num">10</span><span>Técnicas de vendas consultivas</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link" data-num="11" href="cap-11.html"><span class="sidebar__num">11</span><span>Contornando as objeções mais comuns</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link" data-num="12" href="cap-12.html"><span class="sidebar__num">12</span><span>Gestão de reclamações e resolução de problemas</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link" data-num="13" href="cap-13.html"><span class="sidebar__num">13</span><span>Estratégia de rentabilização com monitoramento</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link" data-num="14" href="cap-14.html"><span class="sidebar__num">14</span><span>Checklist rápido antes de abordar</span><span class="sidebar__check">✓</span></a></li>
-        <li><a class="sidebar__link" data-num="15" href="cap-15.html"><span class="sidebar__num">15</span><span>Indicadores e metas</span><span class="sidebar__check">✓</span></a></li>
-      </ul>
+    <a class="sidebar__brand" href="index.html">
+      <span class="sidebar__brand-icon">P</span>
+      <span class="sidebar__brand-text">Playbook<br>Pós-Venda</span>
+    </a>
+    <div class="sidebar__progress">
+      <div class="progress-pill">
+        <span class="progress-pill__label" data-progress-label>0/15</span>
+        <span class="progress-pill__track"><span class="progress-pill__fill" data-progress-fill></span></span>
+      </div>
+    </div>
+    <nav class="sidebar__nav">
+        <div class="sidebar__module">
+          <p class="sidebar__label">Módulo 1 · Fundamentos</p>
+          <ul class="sidebar__list">
+          <li><a class="sidebar__link" data-num="1" href="cap-01.html"><span class="sidebar__num">01</span><span class="sidebar__title">O papel do pós-venda e por que ele gera receita</span><span class="sidebar__check">✓</span></a></li>
+          <li><a class="sidebar__link" data-num="2" href="cap-02.html"><span class="sidebar__num">02</span><span class="sidebar__title">Segmentação e ticket médio</span><span class="sidebar__check">✓</span></a></li>
+          <li><a class="sidebar__link" data-num="3" href="cap-03.html"><span class="sidebar__num">03</span><span class="sidebar__title">Portfólio de serviços e como precificar</span><span class="sidebar__check">✓</span></a></li>
+          <li><a class="sidebar__link is-active" data-num="4" href="cap-04.html"><span class="sidebar__num">04</span><span class="sidebar__title">Estrutura de custos e precificação dos serviços</span><span class="sidebar__check">✓</span></a></li>
+          </ul>
+        </div>
+        <div class="sidebar__module">
+          <p class="sidebar__label">Módulo 2 · Jornada e Relacionamento</p>
+          <ul class="sidebar__list">
+          <li><a class="sidebar__link" data-num="5" href="cap-05.html"><span class="sidebar__num">05</span><span class="sidebar__title">Jornada do cliente e o pitch certo em cada etapa</span><span class="sidebar__check">✓</span></a></li>
+          <li><a class="sidebar__link" data-num="6" href="cap-06.html"><span class="sidebar__num">06</span><span class="sidebar__title">Mensagens automáticas (disparo via WhatsApp)</span><span class="sidebar__check">✓</span></a></li>
+          <li><a class="sidebar__link" data-num="7" href="cap-07.html"><span class="sidebar__num">07</span><span class="sidebar__title">Gestão de feedback e melhoria contínua (NPS)</span><span class="sidebar__check">✓</span></a></li>
+          <li><a class="sidebar__link" data-num="8" href="cap-08.html"><span class="sidebar__num">08</span><span class="sidebar__title">Regra de indicação</span><span class="sidebar__check">✓</span></a></li>
+          </ul>
+        </div>
+        <div class="sidebar__module">
+          <p class="sidebar__label">Módulo 3 · Vendas e Negociação</p>
+          <ul class="sidebar__list">
+          <li><a class="sidebar__link" data-num="9" href="cap-09.html"><span class="sidebar__num">09</span><span class="sidebar__title">Estratégia de abordagem</span><span class="sidebar__check">✓</span></a></li>
+          <li><a class="sidebar__link" data-num="10" href="cap-10.html"><span class="sidebar__num">10</span><span class="sidebar__title">Técnicas de vendas consultivas</span><span class="sidebar__check">✓</span></a></li>
+          <li><a class="sidebar__link" data-num="11" href="cap-11.html"><span class="sidebar__num">11</span><span class="sidebar__title">Contornando as objeções mais comuns</span><span class="sidebar__check">✓</span></a></li>
+          <li><a class="sidebar__link" data-num="12" href="cap-12.html"><span class="sidebar__num">12</span><span class="sidebar__title">Gestão de reclamações e resolução de problemas</span><span class="sidebar__check">✓</span></a></li>
+          </ul>
+        </div>
+        <div class="sidebar__module">
+          <p class="sidebar__label">Módulo 4 · Operação e Resultados</p>
+          <ul class="sidebar__list">
+          <li><a class="sidebar__link" data-num="13" href="cap-13.html"><span class="sidebar__num">13</span><span class="sidebar__title">Estratégia de rentabilização com monitoramento</span><span class="sidebar__check">✓</span></a></li>
+          <li><a class="sidebar__link" data-num="14" href="cap-14.html"><span class="sidebar__num">14</span><span class="sidebar__title">Checklist rápido antes de abordar</span><span class="sidebar__check">✓</span></a></li>
+          <li><a class="sidebar__link" data-num="15" href="cap-15.html"><span class="sidebar__num">15</span><span class="sidebar__title">Indicadores e metas</span><span class="sidebar__check">✓</span></a></li>
+          </ul>
+        </div>
+    </nav>
   </aside>
-  <main>
-    <div class="content">
+  <div class="sidebar-scrim" data-sidebar-scrim></div>
+  <div class="main-panel">
+    <header class="main-panel__header">
+      <button class="menu-btn" type="button" data-menu-toggle aria-label="Abrir sumário">☰</button>
+      <span class="main-panel__breadcrumb">Módulo 1 · Fundamentos &nbsp;/&nbsp; <strong>Capítulo 04</strong></span>
+    </header>
+    <div class="main-panel__scroll">
+      <div id="top"></div>
+      <div class="content">
 
   <p style="font-family:'Archivo',sans-serif; font-weight:800; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:#6EFF3C; margin:0 0 14px;">Capítulo 04</p>
   <h1 style="font-family:'Archivo',sans-serif; font-weight:900; font-size:38px; line-height:1.12; color:#F5F7F2; margin:0 0 36px; letter-spacing:-.01em;">Estrutura de custos e precificação dos serviços</h1>
@@ -227,13 +252,14 @@
     </div>
   </div>
 
+      </div>
+      <div class="chapter-footer">
+        <div class="chapter-footer__side"><a class="chapter-footer__nav-link" href="cap-03.html"><span class="tag">← Anterior</span><span class="title">Portfólio de serviços e como precificar</span></a></div>
+        <button class="mark-done-btn" type="button" data-mark-done="4">Marcar como concluído</button>
+        <div class="chapter-footer__side is-right"><a class="chapter-footer__nav-link" href="cap-05.html"><span class="tag">Próximo →</span><span class="title">Jornada do cliente e o pitch certo em cada etapa</span></a></div>
+      </div>
     </div>
-    <div class="chapter-footer">
-      <div class="chapter-footer__side"><a class="chapter-footer__nav-link" href="cap-03.html"><span class="tag">← Anterior</span><span class="title">Portfólio de serviços e como precificar</span></a></div>
-      <button class="mark-done-btn" type="button" data-mark-done="4">Marcar como concluído</button>
-      <div class="chapter-footer__side is-right"><a class="chapter-footer__nav-link" href="cap-05.html"><span class="tag">Próximo →</span><span class="title">Jornada do cliente e o pitch certo em cada etapa</span></a></div>
-    </div>
-  </main>
+  </div>
 </div>
 <a href="#top" class="back-to-top">↑</a>
 <script src="js/site.js"></script>
